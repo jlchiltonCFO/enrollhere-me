@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const routes = new Map([
   ['/', 'index.html'], ['/index.html', 'index.html'], ['/training.html', 'training.html'],
-  ['/privacy.html', 'privacy.html'], ['/terms.html', 'terms.html'],
+  ['/privacy.html', 'privacy.html'], ['/terms.html', 'terms.html'], ['/about-idme.html', 'about-idme.html'],
   ['/accessibility.html', 'accessibility.html'], ['/404.html', '404.html'],
   ['/styles.css', 'styles.css'], ['/app.js', 'app.js'], ['/training.js', 'training.js'],
   ['/robots.txt', 'robots.txt'],
