@@ -76,6 +76,8 @@
 .simple-lead{max-width:560px;margin:0 0 32px;font-size:1.3rem;line-height:1.5;color:#43596e}
 .simple-start{min-height:66px;min-width:250px;display:inline-flex;align-items:center;justify-content:space-between;gap:35px;padding:16px 24px;border:3px solid #1769aa;border-radius:10px;background:#1769aa;color:#fff;text-decoration:none;font-size:1.05rem;font-weight:800;box-shadow:0 8px 20px rgba(23,105,170,.16)}
 .simple-start:hover{background:#115384;border-color:#115384}
+.simple-start-transition{border-color:#5050ff;background:linear-gradient(100deg,#5050ff 0%,#5050ff 22%,#1769aa 100%);box-shadow:0 9px 24px rgba(80,80,255,.2)}
+.simple-start-transition:hover{border-color:#3f46df;background:linear-gradient(100deg,#4545e8 0%,#4545e8 22%,#115d97 100%)}
 .simple-time{margin:14px 0 0;font-size:.82rem;color:#5d6f80}
 .simple-provider{max-width:560px;margin:20px 0 0;padding-top:18px;border-top:1px solid #d5e0e9;color:#526579;font-size:.78rem;line-height:1.5}
 .simple-safety{padding:38px;border:2px solid #b9cddd;border-radius:18px;background:#f3f8fc;box-shadow:0 12px 32px rgba(25,50,77,.08)}
@@ -98,6 +100,15 @@
 .simple-footer p{max-width:540px;margin:0;font-size:.72rem;line-height:1.6}
 .simple-footer nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:22px}
 .simple-footer a{min-height:44px;display:inline-flex;align-items:center;font-size:.72rem;font-weight:700;color:#115384}
+
+.cms-notice{margin-top:28px;padding:25px 28px;border:2px solid #bdccd9;border-left:9px solid #1769aa;border-radius:10px;background:#f5f8fb}
+.cms-notice-label{margin:0 0 18px!important;color:#38536b;font-size:.64rem!important;font-weight:900;letter-spacing:.08em}
+.cms-notice-grid{display:grid;grid-template-columns:220px 1fr;gap:34px}
+.cms-notice-date{margin:0 0 8px!important;color:#1769aa;font-size:.76rem!important;font-weight:900;text-transform:uppercase;letter-spacing:.05em}
+.cms-notice h2{margin:0;font-family:Arial,"Helvetica Neue",sans-serif;font-size:1.55rem;font-weight:800;letter-spacing:-.02em;color:#19324d}
+.cms-notice-grid>div:last-child{padding-left:30px;border-left:1px solid #cbd7e1}
+.cms-notice p{margin:0 0 11px;font-size:.82rem;line-height:1.55;color:#40566b}
+.cms-notice a{min-height:46px;display:inline-flex;align-items:center;gap:10px;color:#115384;font-size:.76rem;font-weight:800}
 
 .senior-training{background:#f5f8fb;color:#23384e}
 .calm-notice{padding:12px 20px;background:#eaf4fb;border-bottom:1px solid #cbdce9;color:#244b6a;text-align:center;font-size:.78rem;font-weight:800}
@@ -142,6 +153,7 @@
   .simple-header{min-height:76px;gap:12px}
   .simple-brand{gap:7px}.simple-brand img{width:126px}.simple-brand span{padding-left:7px;font-size:.72rem}
   .simple-header-link{min-height:48px;padding:8px 12px;font-size:.75rem}
+  .cms-notice{margin-top:18px;padding:20px 18px;border-left-width:7px}.cms-notice-label{font-size:.58rem!important;line-height:1.4}.cms-notice-grid{grid-template-columns:1fr;gap:16px}.cms-notice-grid>div:last-child{padding:16px 0 0;border-left:0;border-top:1px solid #cbd7e1}.cms-notice h2{font-size:1.35rem}.cms-notice p{font-size:.78rem}
   .simple-hero{min-height:auto;grid-template-columns:1fr;gap:34px;padding-block:44px}
   .simple-idme-label{margin-bottom:20px;font-size:.75rem}
   .simple-hero h1{font-size:clamp(2.45rem,13vw,3.5rem);line-height:1.05;margin-bottom:18px}

@@ -11,6 +11,7 @@ const routes = new Map([
   ['/robots.txt', 'robots.txt'],
   ['/assets/enrollhere-wordmark.png', 'assets/enrollhere-wordmark.png'],
   ['/assets/enrollhere-app-icon.png', 'assets/enrollhere-app-icon.png'],
+  ['/assets/enrollhere-logo-mark.png', 'assets/enrollhere-logo-mark.png'],
   ['/assets/idme-logo-navy.svg', 'assets/idme-logo-navy.svg'],
   ['/assets/sign-in-button-white-green-text.svg', 'assets/sign-in-button-white-green-text.svg'],
   ['/assets/enrollhere-me-og.png', 'assets/enrollhere-me-og.png'],
