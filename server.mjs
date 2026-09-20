@@ -10,9 +10,15 @@ const routes = new Map([
   ['/styles.css', 'styles.css'], ['/app.js', 'app.js'], ['/training.js', 'training.js'],
   ['/robots.txt', 'robots.txt'],
   ['/assets/enrollhere-wordmark.png', 'assets/enrollhere-wordmark.png'],
-  ['/assets/enrollhere-app-icon.png', 'assets/enrollhere-app-icon.png']
+  ['/assets/enrollhere-app-icon.png', 'assets/enrollhere-app-icon.png'],
+  ['/assets/idme-logo-navy.svg', 'assets/idme-logo-navy.svg'],
+  ['/assets/sign-in-button-white-green-text.svg', 'assets/sign-in-button-white-green-text.svg'],
+  ['/assets/enrollhere-me-og.png', 'assets/enrollhere-me-og.png'],
+  ['/assets/agencies/irs-logo.svg', 'assets/agencies/irs-logo.svg'],
+  ['/assets/agencies/va-logo.png', 'assets/agencies/va-logo.png'],
+  ['/assets/agencies/medicare-logo.svg', 'assets/agencies/medicare-logo.svg']
 ]);
-const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.png': 'image/png' };
+const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml' };
 http.createServer(async (req, res) => {
   const pathname = new URL(req.url, 'http://localhost').pathname;
   const file = routes.get(pathname);

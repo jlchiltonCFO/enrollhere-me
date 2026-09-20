@@ -30,7 +30,7 @@ function render() {
   const kicker = document.createElement('p');
   kicker.className = 'kicker';
   kicker.textContent = item.quiz ? 'FINAL CHECK' : `STEP ${current + 1}`;
-  const title = document.createElement('h1');
+  const title = document.createElement('h2');
   title.id = 'lesson-title';
   title.textContent = item.title;
   const body = document.createElement('p');
@@ -109,7 +109,7 @@ function checkAnswers() {
 
 function visualMarkup(type) {
   if (type === 'ready') return '<div class="practice-card"><span aria-hidden="true">✓</span><strong>Your ready kit</strong><small>Personal email · smartphone · phone number · Social Security number · valid photo ID</small></div>';
-  if (type === 'address') return '<div class="browser-demo"><span>● ● ●</span><strong>🔒 api.id.me</strong><small>Begin at the service you need. Check that the ID.me page belongs to id.me.</small></div>';
+  if (type === 'address') return '<div class="idme-training-example"><span class="example-label">Example button you may see</span><span class="idme-button-clear"><img src="assets/sign-in-button-white-green-text.svg" alt="" width="191" height="48"></span><small>This is a picture for practice, not a working sign-in button.</small><div class="browser-demo"><span>● ● ●</span><strong>🔒 api.id.me</strong><small>Begin at the service you need. Check that the ID.me page belongs to id.me.</small></div></div>';
   if (type === 'wallet') return '<div class="practice-card"><span aria-hidden="true">✉</span><strong>Create, then confirm</strong><small>Use a personal email you can open and keep.</small></div>';
   if (type === 'security') return '<div class="practice-card"><span aria-hidden="true">••••••</span><strong>Add account security</strong><small>Set up two methods if you can. Codes stay private.</small></div>';
   if (type === 'verify') return '<div class="practice-card"><span aria-hidden="true">▣</span><strong>ID photo + video selfie</strong><small>Follow ID.me’s camera directions in good light.</small></div>';

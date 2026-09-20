@@ -1,15 +1,14 @@
 # EnrollHere.me
 
-Independent JLC Limited educational landing page and interactive ID.me training tool for older adults.
+Independent EnrollHere educational landing page and interactive ID.me training tool for older adults.
 
 ## Status
 
 - Static HTML/CSS/JS marketing site and seven-step first-time ID.me setup lesson built locally.
-- Lovable project created in the **jlc limited** workspace: https://lovable.dev/projects/58210f85-1ae3-4343-be07-20e3f9600d88
-- App preview link: https://id-preview--58210f85-1ae3-4343-be07-20e3f9600d88.lovable.app/training
+- Go-to-market page follows the same EnrollHere design family as EH Books and EH OS Customer Operations: shared wordmark, Inter typography, violet/navy/mint palette, strong product lockup, clear primary action, and a separate application destination.
 - Working GitHub repository: https://github.com/jlchiltonCFO/enrollhere-me
 - Original backup repository: https://github.com/chiltonbradley/enrollhere-me
-- No production site has been published.
+- GitHub Pages deployment and the `enrollhere.me` custom-domain file are configured. DNS and HTTPS still require production verification.
 - This product is a training tool. It intentionally does not implement ID.me authentication or collect identity data.
 
 Open index.html in a browser, or run `node server.mjs` and visit http://127.0.0.1:4196. No installation is required. `training.html` is the training lesson entry point.
@@ -18,19 +17,23 @@ Release checks cover JavaScript syntax, internal links, all seven training steps
 
 The EnrollHere wordmark and app icon are shared with the existing EnrollHere properties in `jlchiltonCFO/eh-books-marketing`. The public page uses the wordmark as a quiet signature. The training page uses a restrained blue-and-white sign-in style while remaining clearly labeled as practice.
 
+The repository also contains the approved `idme-logo-navy.svg` and `sign-in-button-white-green-text.svg` assets supplied from ID.me's brand kit. The navy logo appears unmodified at its native 93 × 34 size on a light background with clear space. The sign-in button appears unmodified at 191 × 48 only as a labeled, noninteractive example inside the lesson; it is never used to start authentication. EnrollHere and ID.me marks are not combined into a new logo.
+
 See `ACCESSIBILITY-CHECKLIST.md` for the WCAG 2.2 AA review, `BRAND-AND-DOMAIN.md` for launch naming and domain guidance, and `SECURITY.md` for the training-only security boundary.
 
 ## Intended architecture
 
-`https://enrollhere.me` go-to-market site → `https://id.enrollhere.me` Lovable training app → official ID.me help or an organization’s real ID.me sign-in link.
+`https://enrollhere.me` go-to-market site → `https://enrollhere.me/training.html` browser-based training → official ID.me help or an organization’s real ID.me sign-in link.
 
-The custom subdomain is the intended production address. Keep the local `training.html` route and Lovable preview available for testing until DNS, HTTPS, and every route have been verified on `id.enrollhere.me`.
+The marketing page, training lesson, readiness test, legal notices, and accessibility statement are all static files in this repository and deploy together. No separate application, subdomain, database, or application host is required.
 
 The site has no authentication backend, credential fields, identity-document uploads, analytics, forms, or data collection. Lesson state is in memory only. The local preview server listens only on the local machine.
 
 ## GitHub setup
 
 The private `enrollhere-me` working repository belongs to the EnrollHere GitHub account (`jlchiltonCFO`). The original copy under `chiltonbradley` remains intact as a backup. Keep both repositories private until brand, legal, accessibility, and domain reviews are complete.
+
+Every push to `main` runs `.github/workflows/pages.yml`, which publishes the repository root to GitHub Pages. The root `CNAME` file sets the intended public hostname to `enrollhere.me`. In GitHub, set **Settings → Pages → Source** to **GitHub Actions**. Do not change DNS until the Pages deployment is successful and the GitHub custom-domain check is ready.
 
 ## ID.me brand and product boundary
 
