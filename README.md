@@ -4,7 +4,7 @@ Independent JLC Limited educational landing page and interactive ID.me training 
 
 ## Status
 
-- Static HTML/CSS/JS marketing site and five-part practice lesson built locally.
+- Static HTML/CSS/JS marketing site and seven-step first-time ID.me setup lesson built locally.
 - Lovable project created in the **jlc limited** workspace: https://lovable.dev/projects/58210f85-1ae3-4343-be07-20e3f9600d88
 - App preview link: https://id-preview--58210f85-1ae3-4343-be07-20e3f9600d88.lovable.app/training
 - Working GitHub repository: https://github.com/jlchiltonCFO/enrollhere-me
@@ -14,7 +14,9 @@ Independent JLC Limited educational landing page and interactive ID.me training 
 
 Open index.html in a browser, or run `node server.mjs` and visit http://127.0.0.1:4196. No installation is required. `training.html` is the training lesson entry point.
 
-Release checks cover JavaScript syntax, internal links, all five lesson steps, back/restart navigation, larger-text mode, legal pages, HTTP asset responses, keyboard order, mobile reflow, color contrast, reduced motion, forced colors, and blocked access to Git metadata.
+Release checks cover JavaScript syntax, internal links, all seven training steps, final readiness-test validation, back/restart navigation, larger-text mode, legal pages, HTTP asset responses, keyboard order, mobile reflow, color contrast, reduced motion, forced colors, and blocked access to Git metadata.
+
+The EnrollHere wordmark and app icon are shared with the existing EnrollHere properties in `jlchiltonCFO/eh-books-marketing`. The public page uses the wordmark as a quiet signature. The training page uses a restrained blue-and-white sign-in style while remaining clearly labeled as practice.
 
 See `ACCESSIBILITY-CHECKLIST.md` for the WCAG 2.2 AA review, `BRAND-AND-DOMAIN.md` for launch naming and domain guidance, and `SECURITY.md` for the training-only security boundary.
 
@@ -40,9 +42,12 @@ If the product later adds a real ID.me integration, treat that as a new security
 
 - https://docs.id.me/guides/open-id-connect/integration
 - https://help.id.me/hc/en-us/articles/25196264509463-Sign-in-with-ID-me-after-verifying-your-identity
+- https://help.id.me/hc/en-us/articles/202673924-Create-your-ID-me-Wallet
+- https://help.id.me/hc/en-us/articles/9198013708439-Verify-your-identity-with-ID-me-Self-Service
+- https://help.id.me/hc/en-us/articles/4415460350871-Documents-you-need-to-verify-your-identity-with-ID-me
+- https://help.id.me/hc/en-us/articles/360018113053-Multi-factor-authentication-MFA-options-for-ID-me
 - https://help.id.me/hc/en-us/sections/7298020863511-Sign-in-and-passwords
 - https://help.id.me/hc/en-us/articles/202087724-Reset-your-ID-me-password-if-you-can-t-sign-in
 - https://docs.id.me/brand-assets/brand-assets/brand-guidelines
 - https://www.w3.org/TR/WCAG22/
 - https://www.ada.gov/resources/web-guidance/
-
