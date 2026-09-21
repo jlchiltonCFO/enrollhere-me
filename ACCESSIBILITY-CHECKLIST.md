@@ -18,6 +18,6 @@ Target: WCAG 2.2 Level AA. The ADA does not provide a single technical website s
 - [ ] Automated axe/WAVE scan on the deployed URL
 - [ ] Screen-reader smoke tests with NVDA + Chrome and VoiceOver + Safari
 - [ ] 200% and 400% zoom review on the deployed URL
-- [ ] User review with older adults and people who use assistive technology
+- [ ] User review with people 65+ and people who use assistive technology
 - [ ] Recheck approved ID.me asset rendering and alternative text after deployment
 

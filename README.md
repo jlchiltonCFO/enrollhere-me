@@ -1,6 +1,6 @@
 # EnrollHere.me
 
-Independent EnrollHere educational landing page and interactive ID.me training tool for older adults.
+Independent EnrollHere educational landing page and interactive ID.me training tool for people 65+.
 
 ## Status
 
